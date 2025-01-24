@@ -43,17 +43,24 @@
         <p>Years of experience. Specialised in building apps, while ensuring a seamless
           web experience for end users.</p>
       </div>
-      <div class="cards flex">
-        <div class="card-1"></div>
-        <div class="card-2"></div>
-        <div class="card-3"></div>
-        <div class="card-4"></div>
+      <div class="cards">
+        <TheCard title="UI UX designing" :img="card1"/>
+        <TheCard title="Web development" :img="card1"/>
+        <TheCard title="Mobile Development" :img="card1"/>
+        <TheCard title="Web scraping with " :img="card1"/>
       </div>
-             
+       <h1 style="color: #7562e0; font-size: 48px;">The services i offer:</h1>      
+       <div class="Cards">
+        <TheCards title1="UI & UX DESIGNING" :img="card1"/>
+       </div>
     </div>
   </section>
 </template>
-<script></script>
+<script setup>
+import TheCard from "@/components/TheCard.vue"; 
+import card1 from "@/assets/images/card-1.png"; 
+import TheCards from "@/components/TheCard.vue"; 
+</script>
 <style>
 
 header{
@@ -111,11 +118,8 @@ gap: 15px;
 .btn-1{
   background-color: #7562E0;
 }
-.main-img {
-  background-color: #7562E0;
-  border-radius: 50%;
-  display: block;
-  position: relative;     
+.main-img{
+  margin-bottom: -80px;
 }
 aside{
   margin-top: 220px;
@@ -148,5 +152,10 @@ aside{
      line-height: 32px;
      font-weight: 500;
 }
+.cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
 
+}
 </style>
