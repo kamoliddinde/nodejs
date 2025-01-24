@@ -34,7 +34,7 @@
   <div class="black-line"></div>
   <section>
     <div class="container">
-      <h1 class="text-1">About me:</h1>
+      <Sectiontitle title="About me:"/>
       <p class="text-2">Hi, my name is Jayjay Dinero Dinero, i am a Fullstack web developer, UI designer, and Mobile developer. I jhave honed my skills in Web Development and advance i have core understanding of advance UI design principles. 
         Here are the major skiills i have. </p>
       <div class="section-text">
@@ -44,22 +44,68 @@
           web experience for end users.</p>
       </div>
       <div class="cards">
-        <TheCard title="UI UX designing" :img="card1"/>
+        <TheCard title="UI UX designing" :img="card1" className="active"/>
         <TheCard title="Web development" :img="card1"/>
         <TheCard title="Mobile Development" :img="card1"/>
         <TheCard title="Web scraping with " :img="card1"/>
       </div>
-       <h1 style="color: #7562e0; font-size: 48px;">The services i offer:</h1>      
-       <div class="Cards">
-        <TheCards title1="UI & UX DESIGNING" :img="card1"/>
-       </div>
+    
     </div>
+  </section>
+  <section>
+    <div class="container">
+        <Sectiontitle title="The services i offer:"/>
+        <div class="services">
+          <ServicesCard
+          title="UI UX designing" 
+          text=" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, ea."
+          :img="card1"
+          variant="var1"
+
+          />
+          <ServicesCard 
+          title="Web developmen"
+          text=" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, ea."
+          :img="card1"
+          variant="var2"
+          />
+          <ServicesCard
+          title="UI UX designing" 
+          text=" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, ea."
+          :img="card1"
+          variant="var1"
+
+          />
+          <ServicesCard 
+          title="Web developmen"
+          text=" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, ea."
+          :img="card1"
+          variant="var2"
+          />
+          <ServicesCard
+          title="UI UX designing" 
+          text=" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, ea."
+          :img="card1"
+          variant="var1"
+
+          />
+          <ServicesCard 
+          title="Web developmen"
+          text=" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, ea."
+          :img="card1"
+          variant="var2"
+          />
+       
+        </div>
+      </div>
+
   </section>
 </template>
 <script setup>
 import TheCard from "@/components/TheCard.vue"; 
 import card1 from "@/assets/images/card-1.png"; 
-import TheCards from "@/components/TheCard.vue"; 
+import Sectiontitle from "@/components/sectionTitle.vue";
+import ServicesCard from "@/components/ServicesCard.vue";
 </script>
 <style>
 
@@ -141,12 +187,6 @@ aside{
   line-height: 36px;
   font-weight: 500;
 }
-.text-1{
-  color: #7562E0;
-  font-size: 32px;
-  line-height: 48px;
-  font-weight: 600;
-}
 .tex-2{
      font-size: 18px;
      line-height: 32px;
@@ -156,6 +196,6 @@ aside{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
-
+ margin-top: 40px;
 }
 </style>
