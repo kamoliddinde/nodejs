@@ -57,7 +57,7 @@
         <Sectiontitle title="The services i offer:"/>
         <div class="services">
           <ServicesCard
-          title="UI UX designing" 
+          title="UI UX designing"   
           text=" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, ea."
           :img="card1"
           variant="var1"
@@ -100,12 +100,22 @@
       </div>
 
   </section>
+  <section>
+    <div class="container">
+      <div class="Featured-projects">
+        <Sectiontitle title="Featured projects:"/>
+        <p>I have worked on many projects over the course of being a Web Developer, here are a few of my live, real-world projects</p>
+        <FeaturProjects title="TWINDER" text="A live Geolocation app for finding tweets and twitter users around you." img=""/>
+      </div>
+    </div>
+  </section>
 </template>
 <script setup>
 import TheCard from "@/components/TheCard.vue"; 
 import card1 from "@/assets/images/card-1.png"; 
-import Sectiontitle from "@/components/sectionTitle.vue";
+import Sectiontitle from "@/components/SectionTitle.vue";
 import ServicesCard from "@/components/ServicesCard.vue";
+import FeaturProjects from "@/components/Futured-projects.vue"
 </script>
 <style>
 
