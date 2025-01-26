@@ -1,3 +1,7 @@
+@font-face{
+  font-family: "Poppins";
+    src: url(./poppins/Poppins-Regular.ttf);
+}
 body{
   background-color: #1a1a29;
   margin: 0;
@@ -5,5 +9,5 @@ body{
   color: #fff;
 }
 *{
-  font-family:"Gilsans";
+  font-family:"Poppins";
 }

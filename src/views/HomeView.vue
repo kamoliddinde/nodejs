@@ -105,22 +105,38 @@
       <div class="FeaturProjects">
         <Sectiontitle title="Featured projects:"/>
         <p>I have worked on many projects over the course of being a Web Developer, here are a few of my live, real-world projects</p>
-       <Featured-projects :img="map"  />
-       <Featured-projects />
-       <Featured-projects />
+      <div class="projects">
+        <FeaturedProjects :img="map" title="TWINDER" text="A live Geolocation app for finding tweets and twitter users around you."  />
+       <FeaturedProjects />
+       <FeaturedProjects />
+      </div>
       </div>
 
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="contacts">
+        <div>
+          <Sectiontitle title="Contact With me:"/>
+          <p>Satisfied with me? Please contact me</p>
+          <BrandLink/>
+        </div>
+        <div>
+          <h2>Contact me, let’s make magic together</h2>
+        </div>
+      </div>
     </div>
   </section>
 </template>
 <script setup>
 import TheCard from "@/components/TheCard.vue"; 
-import card1 from "@/assets/images/card-1.png"; 
 import Sectiontitle from "@/components/SectionTitle.vue";
 import ServicesCard from "@/components/ServicesCard.vue";
-import FeaturProjects from "@/components/Featured-projects.vue";
+import FeaturedProjects from "@/components/FeaturedProjects.vue";
+import BrandLink from "@/components/BrandLink.vue";
 import map from "@/assets/images/map.png"
-
+import card1 from "@/assets/images/card-1.png"; 
 </script>
 <style>
 
@@ -212,5 +228,15 @@ aside{
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
  margin-top: 40px;
+}
+.project{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.contacts{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 </style>
