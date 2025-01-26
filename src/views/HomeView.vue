@@ -102,11 +102,14 @@
   </section>
   <section>
     <div class="container">
-      <div class="Featured-projects">
+      <div class="FeaturProjects">
         <Sectiontitle title="Featured projects:"/>
         <p>I have worked on many projects over the course of being a Web Developer, here are a few of my live, real-world projects</p>
-        <FeaturProjects title="TWINDER" text="A live Geolocation app for finding tweets and twitter users around you." img=""/>
+       <Featured-projects :img="map"  />
+       <Featured-projects />
+       <Featured-projects />
       </div>
+
     </div>
   </section>
 </template>
@@ -115,7 +118,9 @@ import TheCard from "@/components/TheCard.vue";
 import card1 from "@/assets/images/card-1.png"; 
 import Sectiontitle from "@/components/SectionTitle.vue";
 import ServicesCard from "@/components/ServicesCard.vue";
-import FeaturProjects from "@/components/Futured-projects.vue"
+import FeaturProjects from "@/components/Featured-projects.vue";
+import map from "@/assets/images/map.png"
+
 </script>
 <style>
 
