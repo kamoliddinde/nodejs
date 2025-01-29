@@ -1,17 +1,4 @@
-<template >
-  <header  >
-    <div class="container" >
-      <div class="flex">
-        <a href=""><img src="@/assets/images/logo.png" alt=""></a>
-        <ul class="list-itams ">
-          <li><a href="">Home</a></li>
-          <li><a href="">About me</a></li>
-          <li><a href="">Project</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </header>      
+<template > 
   <aside>
    <div class="container">
     <div class="flex ">
@@ -239,7 +226,7 @@ gap: 15px;
   gap: 20px;
  margin-top: 40px;
 }
-.project{
+.projects{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
