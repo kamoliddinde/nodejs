@@ -107,8 +107,8 @@
         <p>I have worked on many projects over the course of being a Web Developer, here are a few of my live, real-world projects</p>
       <div class="projects">
         <FeaturedProjects :img="map" title="TWINDER" text="A live Geolocation app for finding tweets and twitter users around you."  />
-       <FeaturedProjects />
-       <FeaturedProjects />
+       <FeaturedProjects :img="live" title="LIVENTS" text="A video streaming app with live Geolocation, for streaming events." />
+       <FeaturedProjects :img="car" title="MOOVE" text="Mobile app for booking instant pickup & dropoff accross major cities."  />
       </div>
       </div>
 
@@ -124,10 +124,18 @@
         </div>
         <div>
           <h2>Contact me, let’s make magic together</h2>
+          <div class="input">
+            <input class="input-1" type="text" placeholder="Name:">
+            <input class="input-2" type="text" placeholder="Email:">
+            <input class="input-3" type="text" placeholder="Message:">
+          </div>
+          <button class="btn-1">
+            <p>Send</p>
+          </button>
         </div>
       </div>
     </div>
-  </section>
+  </section>   
 </template>
 <script setup>
 import TheCard from "@/components/TheCard.vue"; 
@@ -137,6 +145,8 @@ import FeaturedProjects from "@/components/FeaturedProjects.vue";
 import BrandLink from "@/components/BrandLink.vue";
 import map from "@/assets/images/map.png"
 import card1 from "@/assets/images/card-1.png"; 
+import live from "@/assets/images/Live.png"
+import car from "@/assets/images/Car.png"
 </script>
 <style>
 
@@ -172,8 +182,8 @@ gap: 15px;
   line-height: 48px;
 }
 .main-text h1{
-  font-size: 52px;
-  line-height: 78px;
+  font-size: 42px;
+  line-height: 50px;
   margin-bottom:10px ;
 }
 .main-text p{
@@ -182,7 +192,8 @@ gap: 15px;
 
 }
 .main-text{
-  width:400px ;
+  width:450px ;
+  margin-top: 160px;
 }
 .btn-1, .btn-2{
   border-radius:8px ;
@@ -197,15 +208,14 @@ gap: 15px;
 }
 .main-img{
   margin-bottom: -80px;
-}
-aside{
-  margin-top: 220px;
+  margin-top: 200px;
+  width: 400px;
 }
 .black-line{
   display: block;
   position: relative;
   bottom: 70px;
-  background-color: black;
+  background-color:#181824 ;
   height:128px;
   width: 100% ;
 }
@@ -236,7 +246,29 @@ aside{
 }
 .contacts{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr ;
   gap: 20px;
+}
+.input{
+ 
+}
+.input-1, .input-2 {
+  width: 100%;
+  height: 62px;
+  background-color: #31313F;
+  border: none;
+  border-radius: 8px;
+  margin: 8px;
+}
+.input-3{
+  width: 100%;
+  height: 98px;
+  background-color: #31313F;
+  border: none;
+  border-radius: 8px ;
+  margin: 8px;
+}
+.btn-1{
+   margin-left : 8px;
 }
 </style>
